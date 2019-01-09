@@ -1,0 +1,38 @@
+INICIO DE VARIABLES
+
+    Num x = 21 :<
+    Num y = 36 :<
+    Num resultado = 0 :<
+
+FIN DE VARIABLES
+
+INICIO DE FUNCIONES
+	
+    PROC Operación < Num x : Num y > < Num resultado >
+    [
+        ELEGIR < x ? y >
+        ENTONCES 
+        [
+            resultado = x + y :<
+        ]
+        CONTRARIO
+        [
+            resultado = x - y :<
+        ]
+
+        RET resultado :<
+    ]
+
+    PROC Imprimir < resultado >
+    [
+        PR < resultado >
+    ]
+
+FIN DE FUNCIONES
+	
+INICIO DE CUERPO
+
+    Resultado = Operación <x : y> :<
+    Imprimir <resultado> :<
+
+FIN DE CUERPO
